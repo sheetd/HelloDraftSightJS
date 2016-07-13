@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Without this line, this will not work in Internet Explorer 8 -->
+  <meta http-equiv ="X-UA-Compatible" content ="IE=8">
+  <!-- Add your dsInterface .js Files here -->
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/djConnect.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsApplication.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDocument.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsModel.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSketchManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsCircle.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsCircleArc.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsEllipseArc.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsLine.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsInfiniteLine.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsPoint.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsTolerance.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsRay.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSimpleNote.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsTable.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSpline.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSolid.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsShape.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsFace.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsLeader.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsPolyLine3D.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsRichLine.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsReferenceImage.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsPolygonMesh.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsRegion.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsPolyLine.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsPolyFaceMesh.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsEmbeddedObject.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsNote.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsGroup.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsHatch.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsHatchPattern.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsBlockDefinition.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsBlockInstance.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsAttributeDefinition.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsAlignedDimension.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsAngularDimension.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsArcLengthDimension.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDiameterDimension.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsJoggedDimension.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsOrdinateDimension.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsRadialDimension.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsRotatedDimension.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsColor.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleUserData.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleArrowsOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleLineOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleFitOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleTextOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsGeneralDimension.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleUserData.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleLinearDimensionOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleToleranceOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleDualDimensionOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleRadialDiameterDimensionOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyle.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsRichLineStyle.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsRichLineStyleManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsTableStyle.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsTableStyleManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsTextStyleManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsTextStyle.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDimensionStyleAngularDimensionOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsLineStyleManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsLineStyle.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsViewManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsNamedView.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsModelNamedView.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSheetNamedView.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsViewport.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsMathUtility.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSheet.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsMathPoint.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsCustomCoordinateSystemManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsCustomCoordinateSystem.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsCommandMessage.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsPoint.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsLayerManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsLayer.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsHyperLink.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsShapeManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsShape.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsCustomData.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsTrace.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSolidBackground.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsGradientBackground.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsImageBackground.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsApplicationOptions.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsInterfaceFiles.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSystemFiles.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsDrawingSupportFiles.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsMathUtility.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsMathPlane.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsAttributeInstance.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSelectionManager.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsSelectionFilter.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsReferenceImage.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsTransparency.js"></script>
+  <script type="text/javascript" src="http://localhost:7776/APISDK/djLibrary/dsViewTile.js"></script>
+  <script src="js/draftsight.js"></script>
+</head>
+
+<body>
+  <h2>Control DraftSight through javascript</h2>
+  <form name="macroform">
+     <button type="button" onclick="runMacro()">Run macro</button><br />
+  </form>
+</body>
+
+</html>
